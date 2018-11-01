@@ -41,3 +41,7 @@ if __name__ == "__main__":
     # post_process = Post_process.Post_process()
     # post_process.process(feature)
     # result = post_process.get_data()
+
+    while True:
+        pass
+
