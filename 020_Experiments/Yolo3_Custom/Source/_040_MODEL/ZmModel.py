@@ -51,7 +51,17 @@ def _get_anchors(anchors_path):
     return np.array(anchors).reshape(-1, 2)
 
 
+def get_session(gpu_fraction=0.3):
+    '''Assume that you have 6GB of GPU memory and want to allocate ~2GB'''
 
+    num_threads = os.environ.get('OMP_NUM_THREADS')
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu_fraction)
+
+    if num_threads:
+        return tf.Session(config=tf.ConfigProto(
+            gpu_options=gpu_options, intra_op_parallelism_threads=num_threads))
+    else:
+        return tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 
 # class PaModel(implements(B_Model)):
 class PaModel():
@@ -85,7 +95,11 @@ class PaModel():
         #-------------------------------------------------
         self.class_names = _get_class(self.classes_path)
         self.anchors = _get_anchors(self.anchors_path)
-        self.sess = K.get_session()
+        # self.sess = K.get_session()
+        import keras.backend.tensorflow_backend as KTF
+        # KTF.set_session(get_session())
+        KTF.set_session(tf.Session(config=tf.ConfigProto(device_count={'gpu': 0})))
+        # self.sess = tf.Session(config=tf.ConfigProto(device_count={'gpu': 0}))
         self.load()
 
     def load(self):
@@ -121,6 +135,8 @@ class PaModel():
         # # TODO: boxes, scores, classes-> Loss
 
         self.yolo_model = load_model(self.model_path, compile=False)
+        if self.gpu_num>=2:
+            self.yolo_model = multi_gpu_model(self.yolo_model, gpus=self.gpu_num)
         self.boxes, self.scores, self.classes = self.score_1()
 
 #        # y_true = [Input(shape=(h // {0: 32, 1: 16, 2: 8}[l], w // {0: 32, 1: 16, 2: 8}[l], num_anchors // 3, num_classes + 5)) for l in range(3)]
@@ -226,6 +242,8 @@ class PaModel():
             del draw
         return image
 
+    def close_session(self):
+        self.sess.close()
 
     # def generate(self):
     #     model_path = os.path.expanduser(self.model_path)

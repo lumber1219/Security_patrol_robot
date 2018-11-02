@@ -54,6 +54,8 @@ if __name__ == "__main__":
     image = Image.open(img)
     out_boxes, out_scores, out_classes = model.predict(image)
     img_new = model.result_visual(image, out_boxes, out_scores, out_classes)
+    img_new.show()
+    model.close_session()
 
     # while True:
     #     while True:
