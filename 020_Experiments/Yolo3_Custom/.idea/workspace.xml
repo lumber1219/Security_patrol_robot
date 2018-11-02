@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="86577466-40d3-45e0-8a6c-1d47cc62cf4c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.log/events.out.tfevents.1533636998.huaili" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.log/events.out.tfevents.1533637420.huaili" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AITemplate/Interface/B_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/AITemplate/Interface/B_Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/_040_MODEL/ZmModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/_040_MODEL/ZmModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_RUN.py" beforeDir="false" afterPath="$PROJECT_DIR$/_RUN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_TRAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/_TRAIN.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,92 +78,64 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1649643225">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="107" />
+          <entry key="py" value="1181" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1288" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_TRAIN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/ZmModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="141" column="27" lean-forward="true" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="27" />
+            <state relative-caret-position="280">
+              <caret line="270" column="40" lean-forward="true" selection-start-line="270" selection-start-column="40" selection-end-line="270" selection-end-column="40" />
               <folding>
                 <element signature="e#174#204#0" expanded="true" />
+                <marker date="1541164754051" expanded="true" signature="3111:3116" ph="..." />
+                <marker date="1541164754051" expanded="true" signature="5113:5121" ph="..." />
+                <marker date="1541164754051" expanded="true" signature="5353:5358" ph="..." />
+                <marker date="1541164754051" expanded="true" signature="6588:6752" ph="..." />
+                <marker date="1541164754051" expanded="true" signature="6588:8441" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/__init__.py">
+        <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/tensorflow/python/client/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding>
-                <element signature="e#217#264#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#173#201#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/predict_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#181#196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/826507827/numpy/random/mtrand.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="2317" column="4" selection-start-line="2317" selection-start-column="4" selection-end-line="2317" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4446">
-              <caret line="234" selection-start-line="234" selection-end-line="234" />
-              <folding>
-                <element signature="e#174#201#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/ntpath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5681">
-              <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
+            <state relative-caret-position="13">
+              <caret line="1373" selection-start-line="1373" selection-end-line="1373" />
             </state>
           </provider>
         </entry>
@@ -167,17 +143,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_RUN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="322">
+              <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+              <folding>
+                <element signature="e#173#193#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AITemplate/Interface/B_Model.py">
+        <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            <state relative-caret-position="143">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="128" column="4" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
+              <folding>
+                <element signature="e#174#201#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,10 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>smooth_l1_dist</find>
-      <find>learning</find>
-      <find>rpn_cls_score</find>
-      <find>self.global</find>
       <find>random</find>
       <find>read</find>
       <find>record_queue</find>
@@ -221,8 +208,12 @@
       <find>include_top</find>
       <find>nvcc</find>
       <find>SourceModule</find>
-      <find>yolo_body</find>
       <find>letterbox_image</find>
+      <find>generate</find>
+      <find>Need Yolo_tiny</find>
+      <find>yolo_body</find>
+      <find>score_1</find>
+      <find>Input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -246,7 +237,6 @@
         <option value="$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/anchor_target_layer_tf.py" />
         <option value="$PROJECT_DIR$/Source/_040_MODEL/Net.py" />
         <option value="$PROJECT_DIR$/AITemplate/Interface/B_Data.py" />
-        <option value="$PROJECT_DIR$/_TRAIN.py" />
         <option value="$PROJECT_DIR$/Source/_010_DATA/Data.py" />
         <option value="$PROJECT_DIR$/Source/_040_MODEL/Ctpn_model.py" />
         <option value="$PROJECT_DIR$/Source/_040_MODEL/anchor_target_layer_tf.py" />
@@ -254,11 +244,15 @@
         <option value="$PROJECT_DIR$/Source/_040_MODEL/generate_anchors.py" />
         <option value="$PROJECT_DIR$/Utils/pycuda_demo.py" />
         <option value="$PROJECT_DIR$/Utils/nms_utils.py" />
-        <option value="$PROJECT_DIR$/_RUN.py" />
         <option value="$PROJECT_DIR$/Utils/predict_utils.py" />
+        <option value="$PROJECT_DIR$/Source/__init__.py" />
+        <option value="$PROJECT_DIR$/Camera_detect.py" />
+        <option value="$PROJECT_DIR$/cv_grab.py" />
+        <option value="$PROJECT_DIR$/_TRAIN.py" />
         <option value="$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py" />
         <option value="$PROJECT_DIR$/Utils/utils.py" />
-        <option value="$PROJECT_DIR$/Source/__init__.py" />
+        <option value="$PROJECT_DIR$/AITemplate/Interface/B_Model.py" />
+        <option value="$PROJECT_DIR$/_RUN.py" />
         <option value="$PROJECT_DIR$/Source/_040_MODEL/ZmModel.py" />
       </list>
     </option>
@@ -285,7 +279,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -298,6 +294,22 @@
               <item name="Yolo3_Custom" type="b2602c69:ProjectViewProjectNode" />
               <item name="Yolo3_Custom" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Yolo3_Custom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yolo3_Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yolo3_Custom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yolo3_Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="Source" type="462c0819:PsiDirectoryNode" />
+              <item name="_040_MODEL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yolo3_Custom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yolo3_Custom" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -306,13 +318,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Detect/one_step/keras-yolo3" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Source/_040_MODEL" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Source/_010_DATA" />
       <recent name="$PROJECT_DIR$/Source/_040_MODEL/rpn_msr" />
     </key>
@@ -332,8 +344,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ZmModel">
-    <configuration name="Network_bulid (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python._RUN">
+    <configuration name="Camera_detect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CTPN-Custom" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -341,11 +353,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Source/_040_MODEL/rpn_msr" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/Network_bulid.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Camera_detect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -375,7 +387,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_TRAIN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_RUN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CTPN-Custom" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -387,7 +399,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_TRAIN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_RUN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -396,7 +408,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="evaluate_util" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="cv_grab" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CTPN-Custom" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,11 +416,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/evaluate_util.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cv_grab.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,19 +473,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.test (1)" />
-      <item itemvalue="Python.Network_bulid (1)" />
-      <item itemvalue="Python._TRAIN" />
-      <item itemvalue="Python.evaluate_util" />
       <item itemvalue="Python.nms_utils" />
       <item itemvalue="Python.ZmModel" />
+      <item itemvalue="Python.Camera_detect" />
+      <item itemvalue="Python.cv_grab" />
+      <item itemvalue="Python._RUN" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._RUN" />
         <item itemvalue="Python.ZmModel" />
+        <item itemvalue="Python.cv_grab" />
+        <item itemvalue="Python.Camera_detect" />
         <item itemvalue="Python.nms_utils" />
-        <item itemvalue="Python.evaluate_util" />
-        <item itemvalue="Python._TRAIN" />
-        <item itemvalue="Python.Network_bulid (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -492,14 +504,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24209379" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.129771" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41207075" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39646202" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32882413" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39646202" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23204994" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -546,23 +559,20 @@
           <line>32</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Camera_detect.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cv_grab.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/site-packages/tensorflow/python/framework/common_shapes.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/threading.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/site-packages/tensorflow/python/ops/variables.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/site-packages/tensorflow/python/framework/ops.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/Data.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/site-packages/tensorflow/python/ops/math_ops.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/site-packages/tensorflow/python/client/session.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/test.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/Network_bulid.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/Net.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/generate_anchors.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/bbox_transform.py" />
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/rpn_msr/anchor_target_layer_tf.py" />
     <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/test.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/chinese-ocr/lib/python2.7/site-packages/tensorflow/python/ops/gradients_impl.py" />
     <entry file="file://$PROJECT_DIR$/Source/_020_PRE_PROCESS/Pre_process.py">
@@ -606,68 +616,82 @@
     <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/anchor_target_layer_tf.py" />
     <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/Ctpn_model.py" />
     <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/Net.py" />
-    <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/colorsys.py">
+    <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/colorsys.py" />
+    <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/site-packages/keras/utils/multi_gpu_utils.py" />
+    <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/ntpath.py" />
+    <entry file="file://$PROJECT_DIR$/Source/_010_DATA/Data.py" />
+    <entry file="file://$PROJECT_DIR$/Source/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/site-packages/keras/utils/multi_gpu_utils.py">
+    <entry file="file://$PROJECT_DIR$/Camera_detect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../.conda/envs/yolo3/lib/python3.5/ntpath.py">
+    <entry file="file://$PROJECT_DIR$/cv_grab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5681">
-          <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
+        <state relative-caret-position="436">
+          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding>
+            <element signature="e#14#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_RUN.py">
+    <entry file="file://$PROJECT_DIR$/grab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="323">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AITemplate/Interface/B_Model.py">
+    <entry file="file://$PROJECT_DIR$/mvsdk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_TRAIN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="380">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#14#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/826507827/numpy/random/mtrand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
+        <state relative-caret-position="43947">
           <caret line="2317" column="4" selection-start-line="2317" selection-start-column="4" selection-end-line="2317" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py">
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/keras/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4446">
-          <caret line="234" selection-start-line="234" selection-end-line="234" />
-          <folding>
-            <element signature="e#174#201#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="254">
+          <caret line="183" column="4" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/ctypes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="426" column="18" selection-start-line="426" selection-start-column="18" selection-end-line="426" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="2321" column="4" selection-start-line="2321" selection-start-column="4" selection-end-line="2321" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/predict_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="494">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#181#196#0" expanded="true" />
@@ -675,42 +699,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/tensorflow/python/ops/image_ops_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="1627" column="4" selection-start-line="1627" selection-start-column="4" selection-end-line="1627" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_TRAIN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#175#184#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/keras/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="428" column="8" selection-start-line="428" selection-start-column="8" selection-end-line="428" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AITemplate/Interface/B_Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="456">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/Model_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="128" column="4" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="4" />
           <folding>
-            <element signature="e#173#201#0" expanded="true" />
+            <element signature="e#174#201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/_010_DATA/Data.py">
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/keras/engine/topology.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="165" selection-end-column="8" />
-          <folding>
-            <element signature="e#240#249#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-462">
+          <caret line="1392" column="4" selection-start-line="1392" selection-start-column="4" selection-end-line="1392" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="143">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4562">
+          <caret line="690" selection-start-line="690" selection-end-line="690" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../.conda/envs/yolo3/lib/python3.5/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="1373" selection-start-line="1373" selection-end-line="1373" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_RUN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
           <folding>
-            <element signature="e#217#264#0" expanded="true" />
+            <element signature="e#173#193#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source/_040_MODEL/ZmModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="141" column="27" lean-forward="true" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="27" />
+        <state relative-caret-position="280">
+          <caret line="270" column="40" lean-forward="true" selection-start-line="270" selection-start-column="40" selection-end-line="270" selection-end-column="40" />
           <folding>
             <element signature="e#174#204#0" expanded="true" />
+            <marker date="1541164754051" expanded="true" signature="3111:3116" ph="..." />
+            <marker date="1541164754051" expanded="true" signature="5113:5121" ph="..." />
+            <marker date="1541164754051" expanded="true" signature="5353:5358" ph="..." />
+            <marker date="1541164754051" expanded="true" signature="6588:6752" ph="..." />
+            <marker date="1541164754051" expanded="true" signature="6588:8441" ph="..." />
           </folding>
         </state>
       </provider>

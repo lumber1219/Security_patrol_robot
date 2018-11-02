@@ -22,7 +22,7 @@ class B_Model(Interface):
     def predict(self):
         pass
 
-    def score(self):
+    def score_1(self):
         pass
 
     def model_visual(self):

@@ -7,6 +7,8 @@
 # @Descript: _RUN
 
 from Source import *
+from PIL import Image
+from Source._040_MODEL import ZmModel
 
 if __name__ == "__main__":
     pass
@@ -42,6 +44,30 @@ if __name__ == "__main__":
     # post_process.process(feature)
     # result = post_process.get_data()
 
-    while True:
-        pass
+    base_path = ''
+
+    # 模型建立
+    model = ZmModel.PaModel()
+    model.load()
+
+    img = input('Input image filename:')
+    image = Image.open(img)
+    out_boxes, out_scores, out_classes = model.predict(image)
+    img_new = model.result_visual(image, out_boxes, out_scores, out_classes)
+
+    # while True:
+    #     while True:
+    #         img = input('Input image filename:')
+    #         try:
+    #             image = Image.open(img)
+    #         except:
+    #             print('Open Error! Try again!')
+    #             continue
+    #         else:
+    #             r_image = yolo.detect_image(image)
+    #             r_image.show()
+    #     yolo.close_session()
+    #
+    # while True:
+    #     pass
 
