@@ -9,7 +9,9 @@
 from Source import *
 from PIL import Image
 from Source._040_MODEL import ZmModel
-
+import time
+import cv2
+import numpy as np
 if __name__ == "__main__":
     pass
     # data_path = "."
@@ -50,12 +52,15 @@ if __name__ == "__main__":
     model = ZmModel.PaModel()
     model.load()
 
-    img = input('Input image filename:')
-    image = Image.open(img)
-    out_boxes, out_scores, out_classes = model.predict(image)
-    img_new = model.result_visual(image, out_boxes, out_scores, out_classes)
-    img_new.show()
-    model.close_session()
+    # img = input('Input image filename:')
+    #
+    # image = Image.open(img)
+    # start_time = time.time()
+    # out_boxes, out_scores, out_classes = model.predict(image)
+    # img_new = model.result_visual(image, out_boxes, out_scores, out_classes)
+    # print('Need time is', time.time()-start_time)
+    # img_new.show()
+    # model.close_session()
 
     # while True:
     #     while True:
@@ -72,4 +77,17 @@ if __name__ == "__main__":
     #
     # while True:
     #     pass
+
+    cap = cv2.VideoCapture(0)
+    while True:
+        ret, frame = cap.read()
+        frame = Image.fromarray(frame)
+        out_boxes, out_scores, out_classes = model.predict(frame)
+        img_new = model.result_visual(frame, out_boxes, out_scores, out_classes)
+        # img_new.show()
+        cv2.imshow('1',np.array(img_new))
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            model.close_session()
+            break
+
 

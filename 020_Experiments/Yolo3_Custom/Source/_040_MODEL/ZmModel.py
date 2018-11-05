@@ -6,7 +6,11 @@
 # @Software: Template
 # @Descript: Model
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from AITemplate import B_Model
 from interface import implements
 from Utils import predict_utils
@@ -95,10 +99,14 @@ class PaModel():
         #-------------------------------------------------
         self.class_names = _get_class(self.classes_path)
         self.anchors = _get_anchors(self.anchors_path)
-        # self.sess = K.get_session()
-        import keras.backend.tensorflow_backend as KTF
-        # KTF.set_session(get_session())
-        KTF.set_session(tf.Session(config=tf.ConfigProto(device_count={'gpu': 0})))
+        # self.sess = tf.Session(config= tf.ConfigProto(device_count={'gpu': 0}, allow_soft_placement=True, log_device_placement=True))
+        self.sess = K.get_session()
+
+        # self.sess = tf.Session()
+
+        # import keras.backend.tensorflow_backend as KTF
+        # KTF.set_session(tf.ConfigProto(device_count={'gpu': 0}))
+        # KTF.set_session(tf.Session(config=tf.ConfigProto(device_count={'gpu': 0})))
         # self.sess = tf.Session(config=tf.ConfigProto(device_count={'gpu': 0}))
         self.load()
 
@@ -184,6 +192,7 @@ class PaModel():
 
         # 得到boxes、scores与classes
         print(self.yolo_model.layers)
+
         out_boxes, out_scores, out_classes = self.sess.run(
             [self.boxes, self.scores, self.classes],
             feed_dict={
