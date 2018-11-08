@@ -50,7 +50,7 @@ if __name__ == "__main__":
 
     # 模型建立
     model = ZmModel.PaModel()
-    model.load()
+    # model.load()
 
     # img = input('Input image filename:')
     #
@@ -86,6 +86,7 @@ if __name__ == "__main__":
         img_new = model.result_visual(frame, out_boxes, out_scores, out_classes)
         # img_new.show()
         cv2.imshow('1',np.array(img_new))
+        print '1'
         if cv2.waitKey(1) & 0xFF == ord('q'):
             model.close_session()
             break

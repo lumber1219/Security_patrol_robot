@@ -9,7 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Source/_040_MODEL/rpn_msr" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/train.log" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.5 (yolo3_new)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7 (yolo3_python2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="R Skeletons" level="application" />
