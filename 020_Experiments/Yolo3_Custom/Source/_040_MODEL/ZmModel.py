@@ -192,14 +192,16 @@ class PaModel():
 
         # 得到boxes、scores与classes
         print(self.yolo_model.layers)
-
+        # K.set_value(self.yolo_model.optimizer.lr, 0)
         out_boxes, out_scores, out_classes = self.sess.run(
             [self.boxes, self.scores, self.classes],
             feed_dict={
                 self.yolo_model.input: image_data,
-                self.input_image_shape: [image.size[1], image.size[0]],
-                K.learning_phase(): 0
+                self.input_image_shape: [image.size[1], image.size[0]]
             })
+        # K.learning_phase(): 0
+        # K.learning_phase()
+
 
         print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
 

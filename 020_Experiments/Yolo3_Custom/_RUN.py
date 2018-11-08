@@ -7,12 +7,16 @@
 # @Descript: _RUN
 
 from Source import *
-from PIL import Image
+from PIL import Image as Image_PIL
 from Source._040_MODEL import ZmModel
 import time
 import cv2
 import numpy as np
-if __name__ == "__main__":
+import rospy
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge, CvBridgeError
+
+if __name__ == "__main_1_":
     pass
     # data_path = "."
     # feature_path = "."
@@ -46,10 +50,7 @@ if __name__ == "__main__":
     # post_process.process(feature)
     # result = post_process.get_data()
 
-    base_path = ''
 
-    # 模型建立
-    model = ZmModel.PaModel()
     # model.load()
 
     # img = input('Input image filename:')
@@ -78,17 +79,62 @@ if __name__ == "__main__":
     # while True:
     #     pass
 
-    cap = cv2.VideoCapture(0)
-    while True:
-        ret, frame = cap.read()
-        frame = Image.fromarray(frame)
-        out_boxes, out_scores, out_classes = model.predict(frame)
-        img_new = model.result_visual(frame, out_boxes, out_scores, out_classes)
+    # cap = cv2.VideoCapture(0)
+    # while True:
+    #     ret, frame = cap.read()
+    #     frame = Image.fromarray(frame)
+    #     out_boxes, out_scores, out_classes = model.predict(frame)
+    #     img_new = model.result_visual(frame, out_boxes, out_scores, out_classes)
+    #     # img_new.show()
+    #     cv2.imshow('1',np.array(img_new))
+    #     print '1'
+    #     if cv2.waitKey(1) & 0xFF == ord('q'):
+    #         model.close_session()
+    #         break
+
+
+def callback(data):
+    global count, bridge
+    count = count + 1
+    if count==1:
+        count = 0
+        cv_img = bridge.imgmsg_to_cv2(data, 'bgr8')
+        cv_img = Image_PIL.fromarray(cv_img)
+        out_boxes, out_scores, out_classes = model.predict(cv_img)
+        img_new = model.result_visual(cv_img, out_boxes, out_scores, out_classes)
         # img_new.show()
-        cv2.imshow('1',np.array(img_new))
-        print '1'
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            model.close_session()
-            break
+        cv2.imshow('detect results', np.array(img_new))
+        cv2.waitKey(1)
+    else:
+        pass
+
+
+def displayWebcam():
+    rospy.init_node('detect_result', anonymous= True)
+
+    global count, bridge
+    count = 0
+    bridge = CvBridge()
+    rospy.Subscriber('webcam/image_raw', Image, callback)
+    rospy.spin()
+
+if __name__ == "__main__":
+    base_path = ''
+    # 模型建立
+    model = ZmModel.PaModel()
+    # cap = cv2.VideoCapture(0)
+    # while True:
+    #     ret, frame = cap.read()
+    #     frame = Image_PIL.fromarray(frame)
+    #     out_boxes, out_scores, out_classes = model.predict(frame)
+    #     img_new = model.result_visual(frame, out_boxes, out_scores, out_classes)
+    #     # img_new.show()
+    #     cv2.imshow('1', np.array(img_new))
+    #     print '1'
+    #     if cv2.waitKey(1) & 0xFF == ord('q'):
+    #         model.close_session()
+    #         break
+
+    displayWebcam()
 
 
